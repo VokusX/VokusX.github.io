@@ -633,8 +633,8 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	box-shadow: 0 0 20px #eee;
 	border-radius: 10px;
 	display: block;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 42%;
+    margin-right: 42%;
    }
   
   .btn:hover {
@@ -689,10 +689,22 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   100% {margin-top:-270px;}
 }
 
-.video {
-	display: block;
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px; height: 0; overflow: hidden;
+	}
+	 
+	.video-container iframe,
+	.video-container object,
+	.video-container embed {
 	position: absolute;
-	width: 60%;
-	height: 60%;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
+.para-center{
+	text-align: center;
 }
